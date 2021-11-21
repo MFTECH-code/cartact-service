@@ -1,11 +1,11 @@
 package com.models.entities;
 
-import java.util.Date;
+import java.util.Calendar;
 import java.util.List;
 
 public class Contract {
 	private Integer number;
-	private Date date;
+	private Calendar date;
 	private Double totalValue;
 	
 	List<Installment> installments;
@@ -14,7 +14,7 @@ public class Contract {
 		super();
 	}
 
-	public Contract(Integer number, Date date, Double totalValue, List<Installment> installments) {
+	public Contract(Integer number, Calendar date, Double totalValue, List<Installment> installments) {
 		super();
 		this.number = number;
 		this.date = date;
@@ -30,11 +30,11 @@ public class Contract {
 		this.number = number;
 	}
 
-	public Date getDate() {
+	public Calendar getDate() {
 		return date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(Calendar date) {
 		this.date = date;
 	}
 
